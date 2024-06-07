@@ -1,0 +1,147 @@
+<div class="container">
+  <div class="container-fluid">
+    <div class="conatiner main">
+      <div class="container bg-grey about">
+        <h2 class="heading center">Kake di Coffee</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nobis
+          architecto nulla ea, ex explicabo mollitia optio deleniti quis odit
+          iste laborum. Aliquid ad ducimus accusantium magnam in ea, placeat
+          nisi, tenetur hic ut suscipit! Libero animi vel excepturi explicabo
+          quod aliquam tempore numquam doloribus corrupti odit dolor aliquid
+          debitis modi sed asperiores nostrum quia, incidunt, rerum fugit nisi,
+          nobis cupiditate aspernatur! Ipsum at aut laborum ea similique id
+          commodi minus cum quaerat accusamus nostrum quisquam pariatur, nisi a
+          ratione sint. Atque accusantium optio aperiam eius beatae animi
+          tenetur laboriosam, quae praesentium deleniti porro voluptatem
+          voluptates veniam at illo quia?
+        </p>
+        <img
+          src="./assets/bg image.jpeg"
+          alt="biscuits"
+          style="height: 100%; width: 100%"
+          class="img-fluid photo"
+        />
+      </div>
+      <hr />
+      <div class="contact bg-primary form">
+        <h1 class="heading text-white center">Contact Us</h1>
+        <div [formGroup]="contactForm">
+          <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+              <label for="name" class="form-group text-white text-bold"
+                >Name:</label
+              ><br />
+              <input
+                type="text"
+                placeholder="enter your name"
+                formControlName="firstName"
+                class="form-control named"
+              />
+            </div>
+            <div class="col-3"></div>
+            <div class="row">
+              <div class="col-3">&nbsp;</div>
+              <div class="col-3 block">
+                <label for="email" class="form-group text-white">Email:</label
+                ><br />
+                <input
+                  type="email"
+                  formControlName="email"
+                  placeholder="someone@example.com"
+                  class="form-control"
+                />
+              </div>
+              <div class="col-3 block">
+                <label for="contact" class="form-group text-white"
+                  >Mobile:</label
+                >
+                <input
+                  type="number"
+                  formControlName="contactNo"
+                  placeholder="9999955555"
+                  class="form-control"
+                />
+              </div>
+              <div class="col-3">&nbsp;</div>
+            </div>
+            <div class="row">
+              <div class="col-3">&nbsp;</div>
+              <div class="col-6">
+                <label for="address" class="form-group text-white"
+                  >Address:</label
+                ><br />
+                <input
+                  type="text"
+                  placeholder="h.no/flat number/block no"
+                  class="form-control"
+                  formControlName="address"
+                /><br />
+                <input
+                  type="text"
+                  placeholder="address line 2 "
+                  formControlName="address2"
+                  class="form-control"
+                />
+                <div class="row">
+                  <div class="col-6">
+                    <label for="landmarks" class="form-group text-white"
+                      >Landmark:</label
+                    >
+                    <input
+                      type="text"
+                      placeholder="landmark"
+                      formControlName="landmark"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="col-6">
+                    <label for="pincod" class="form-group text-white"
+                      >Pincode:</label
+                    >
+                    <input
+                      type="number"
+                      placeholder="PINCODE"
+                      formControlName="pincode"
+                      class="form-control"
+                    />
+                  </div>
+                  <br />
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <label for="city" class="form-group text-white"
+                      >City:</label
+                    >
+                    <input
+                      type="text"
+                      placeholder="city"
+                      formControlName="city"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="col-6">
+                    <label for="state" class="form-group text-white"
+                      >State:</label
+                    >
+                    <input
+                      type="text"
+                      placeholder="state"
+                      formControlName="state"
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <button class="btn btn-success" (click)="OnSubmit()">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">&nbsp;</div>
+  <div class="container">&nbsp;</div>
+</div>

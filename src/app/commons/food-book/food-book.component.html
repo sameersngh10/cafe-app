@@ -1,0 +1,93 @@
+<div class="conatiner">
+  <div
+    class="container-fluid"
+    style="background-image: url('./assets/beans.jpeg')"
+  >
+    <div class="order">
+      <div [formGroup]="orderForm">
+        <div class="row">
+          <h1 class="heading text-white center">Order Coffee</h1>
+        </div>
+        <br />
+
+        <div class="row">
+          <div class="col-4">
+            <label for="CusName" class="form-group">Customer Name:</label>
+            <input
+              type="text"
+              placeholder="name"
+              formControlName="CusName"
+              class="form-control"
+            />
+          </div>
+          <div class="col-3">
+            <label for="Coffee" class="form-group">Choose a Coffee:</label>
+            <select
+              name="coffee"
+              class="form-control"
+              formControlName="coffee"
+              style="color: grey"
+            >
+              <option value="" disabled selected>Select...</option>
+              <option value="French Vanilla">French Vanilla</option>
+              <option value="Pumpkin Spice">Pumpkin Spice</option>
+              <option value="Caramel Macchiato">Caramel Macchiato</option>
+              <option value="Hazelnut">Hazelnut</option>
+            </select>
+
+            <label for="cq" class="form-group">Coffee Quantity:</label>
+            <input
+              type="number"
+              placeholder="quantity"
+              formControlName="desQuant"
+              class="form-control"
+            />
+          </div>
+
+          <div class="row col-5">
+            <div class="col-8">
+              <label for="Dessert" class="form-group">Choose a Dessert:</label>
+              <select
+                name="dessert"
+                class="form-control"
+                formControlName="dessert"
+                style="color: grey"
+                placeholder="please select"
+              >
+                <option value="" disabled selected>Select...</option>
+                <option value="Donut">Donut</option>
+                <option value="Cherry Pie">Cherry Pie</option>
+                <option value="Cheesecake">Cheesecake</option>
+                <option value="Cinnamon Roll">Cinnamon Roll</option>
+              </select>
+              <label for="dq" class="form-group">Desert Quantity:</label>
+              <input
+                type="number"
+                placeholder="quantity"
+                formControlName="desQuant"
+                class="form-control"
+              />
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-5">&nbsp;</div>
+          <div class="col-2">
+            <button class="btn btn-success button" (click)="OnSave()">
+              Create order
+            </button>
+          </div>
+
+          <div class="col-5">&nbsp;</div>
+        </div>
+      </div>
+      <img
+        src="./assets/simple-coffee-logo-vector-24731410.jpeg"
+        alt="coffe"
+        class="img-fluid center"
+        style="height: 25%; width: 25%"
+      /><br />
+    </div>
+  </div>
+</div>
